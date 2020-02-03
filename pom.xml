@@ -23,7 +23,7 @@
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>OpenTracing Web App</name>
+    <name>OpenTracing Demo Web App</name>
     <description>A simple Web application to illustrate micro profile opentracing in WildFly</description>
 
     <parent>
@@ -61,6 +61,6 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>demo-opentracing</finalName>
+        <finalName>opentracing-demo</finalName>
     </build>
 </project>

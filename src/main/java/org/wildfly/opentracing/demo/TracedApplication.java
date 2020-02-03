@@ -1,6 +1,6 @@
 /**
  * JBoss, Home of Professional Open Source
- * Copyright 2015, Red Hat, Inc. and/or its affiliates, and individual
+ * Copyright 2020, Red Hat, Inc. and/or its affiliates, and individual
  * contributors by the @authors tag. See the copyright.txt in the
  * distribution for a full listing of individual contributors.
  *
@@ -20,11 +20,11 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 /**
- * ObservabilityApplication is an arbitrary name, what is important is that javax.ws.rs.core.Application is extended
- * and the @ApplicationPath annotation is used with a "rest" path.  Without this the rest routes linked to
- * from index.html would not be found.
+ * TracedApplication is an arbitrary name, what is important is that it extends <code>javax.ws.rs.core.Application</code>
+ * and the @ApplicationPath annotation is used with a "rest" path.
+ * Without this the rest routes linked to from index.html would not be found.
  */
 @ApplicationPath("rest")
-public class SimpleApplication extends Application {
+public class TracedApplication extends Application {
     // Left empty intentionally
 }

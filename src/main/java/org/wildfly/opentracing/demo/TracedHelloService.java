@@ -1,6 +1,6 @@
 /*
  * JBoss, Home of Professional Open Source
- * Copyright 2015, Red Hat, Inc. and/or its affiliates, and individual
+ * Copyright 2020, Red Hat, Inc. and/or its affiliates, and individual
  * contributors by the @authors tag. See the copyright.txt in the
  * distribution for a full listing of individual contributors.
  *
@@ -37,7 +37,7 @@ public class TracedHelloService {
     public String createHelloMessage(String name) {
 
         try {
-            Thread.sleep((long)(random.nextInt(200)));
+            Thread.sleep(random.nextInt(200));
         } catch (InterruptedException e) {
         }
 
