@@ -26,7 +26,8 @@ import javax.ws.rs.QueryParam;
 import org.eclipse.microprofile.opentracing.Traced;
 
 @Path("/")
-@Traced
+//JAxRS endpoints are always traced. Adding the annotation for clarity doesn't hurt, but not strictly needed 
+//@Traced
 public class Endpoints {
 
     @Inject
