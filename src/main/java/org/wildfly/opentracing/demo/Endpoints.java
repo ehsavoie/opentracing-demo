@@ -44,7 +44,7 @@ public class Endpoints {
     @Path("/xml")
     @Produces({"application/xml"})
     public String getHelloWorldXML(@DefaultValue("World") @QueryParam("name") String name) {
-        return "<?xml version=\"1.0\" encoding=\"UTF-8\"?><result>" + helloService.createHelloMessage(name) + "</result></xml>";
+        return "<?xml version=\"1.0\" encoding=\"UTF-8\"?><xml><result>" + helloService.createHelloMessage(name) + "</result></xml>";
     }
 
 }
